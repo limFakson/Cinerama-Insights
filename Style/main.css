@@ -3,9 +3,18 @@
     box-sizing: border-box;
     margin: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
 body {
     padding: 0;
     width: 100%;
+    overflow-x: hidden;
 }
 header{
     background-image: url('../src/files/alfa-home-slider-img-1.jpg');
@@ -36,20 +45,24 @@ nav ul li{
     font-weight: 400;
     color: #fff;
 }
+.icn{
+    padding: 0 10px;
+}
+.nav-icon i{
+    color: #fff;
+    font-size: 18px;
+}
 .classic{
     display: grid;
     width: 100%;
-    margin: 2rem 0 5rem 0;
+    margin-top: 3rem;
 }
 .classic .txt-img{
     display: grid;
     justify-self: center;
-    width: 80%;
     background-image: url("../src/files/moving-text.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    padding-bottom: 2rem;
+    background-size: contain;
 }
 .txt-img h3{
     text-align: center;
@@ -57,14 +70,12 @@ nav ul li{
     font-size: 18px;
     word-spacing: 10px;
     letter-spacing: 5px;
-    line-height: 5px;
     color: #fff;
-    margin-top: 3.6rem;
+    padding-top: 1rem;
 }
 .classic span img{
-    padding: 1rem;
-    padding-bottom: 2rem;
-    width: 70%;
+    padding: 2rem;
+    width: 80%;
     justify-self: center;
 }
 .awards{
@@ -85,6 +96,150 @@ nav ul li{
     width: 100%;
     object-fit: cover;
 }
-.fst{
+.fstdiv{
     background-color: rgb(16, 17, 19);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem;
+    height: 21rem;
+    gap: 2rem;
+    padding-bottom: 5rem;
+}
+.fstdiv span{
+    color: #fff;
+    width: 53%;
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 2.5rem;
+}
+#syn{
+    width: 30%;
+    padding: 0;
+}
+.fstdiv h1{
+    text-align: right;
+    font-weight: 700;
+    font-size: 34px;
+}
+.shorts{
+    height: 430px;
+}
+.gallery{
+    width: 100%;
+    position: relative;
+}
+.image-gallery{
+    align-items: center;
+    display: flex;
+    height: 300px;
+}
+.gallery-item{
+    height: 330px;
+    z-index: 0;
+    position: absolute;
+    width: 500px;
+    background-size: contain;
+}
+.item-img1{
+    left: 7%;
+  transform: translateX(-50%);
+}
+.item-img2{
+    height: 380px;
+    z-index: 1;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 680px;
+}
+.item-img3{
+    left: 93%;
+    transform: translateX(-50%);
+}
+.testimonial{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.tstl-slide{
+    width: 50%;
+}
+.carousel{
+    width: 100%;
+}
+.second{
+    margin: 2rem 0;
+    padding: 4rem 0;
+    display: grid;
+    background-image: url("../src/files/alfa-home-background-img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    image-rendering: pixelated;
+}
+.new-fiims{
+    text-align: center;
+}
+.new-fiims h3{
+    color: #848484;
+    font-size: 12px;
+    line-height: 1.5em;
+    letter-spacing: .13em;
+    font-weight: 700;
+}
+.new-fiims h2{
+    margin: 11px 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 1.310344827586207em;
+    letter-spacing: .13em;
+}
+.img-container{
+    justify-self: center;
+    margin: 2rem 0 0 0;
+}
+.img-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 2rem;
+}
+.gallery-card img{
+    width: 370px;
+}
+.fig-caption h3{
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin: 1rem 0;
+}
+.footer-fst{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem;
+    background-color: #1c1c1c;
+}
+.footer-fst div{
+    width: 305px;
+} 
+.footer-fst div h2{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.footer-menu ul{
+    padding-top: 1rem;
+}
+.footer-menu ul li{
+    color: #848484;
+    padding: 6px 0;
+}
+.about p{
+    color: #1c1c1c;
 }
