@@ -1,0 +1,90 @@
+* {
+    font-family: "Josefin Sans";
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    padding: 0;
+    width: 100%;
+}
+header{
+    background-image: url('../src/files/alfa-home-slider-img-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.logo{
+    padding-left: 10px;
+    width: 20%;
+}
+.logo img{
+    width: 160px;
+}
+nav{
+    width: 50%;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0 1.3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+}
+.classic{
+    display: grid;
+    width: 100%;
+    margin: 2rem 0 5rem 0;
+}
+.classic .txt-img{
+    display: grid;
+    justify-self: center;
+    width: 80%;
+    background-image: url("../src/files/moving-text.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding-bottom: 2rem;
+}
+.txt-img h3{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    line-height: 5px;
+    color: #fff;
+    margin-top: 3.6rem;
+}
+.classic span img{
+    padding: 1rem;
+    padding-bottom: 2rem;
+    width: 70%;
+    justify-self: center;
+}
+.awards{
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-top: 5rem;
+    margin: 2rem;
+}
+.pg-rate{
+    justify-self: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    width: 350px;
+}
+.pg-rate img{
+    width: 100%;
+    object-fit: cover;
+}
+.fst{
+    background-color: rgb(16, 17, 19);
+}
