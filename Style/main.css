@@ -226,12 +226,12 @@ nav ul li{
     font-weight: 700;
     font-size: 24px;
     text-align: center;
-    margin: 1rem 0;
+    margin: 10rem 0 2rem 0;
 }
 .third{
     display: grid;
     background-color: #fff;
-    padding: 2rem 3rem;
+    padding: 2rem 0;
 }
 .product{
     justify-self: center;
@@ -252,7 +252,7 @@ nav ul li{
     justify-content: center;
     align-items: center;
     gap: .16rem;
-    margin: 2rem;
+    margin: 2rem 3rem 10rem 3rem;
 }
 .products-card{
     text-align: center;
@@ -260,10 +260,106 @@ nav ul li{
 }
 .products-icn{
     justify-self: center;
-    width: 80px;
+    width: 70px;
+    height: 78px;
+    margin-bottom: 1.3rem;
 }
 .products-icn img{
     width: 100%;
+    height: 100%;
+}
+.theatre-production{
+    background-image: url("../src/files/alfa-home-parallax-2.jpg");
+    padding: 3rem;
+}
+.fourth{
+    margin: 2rem 0 12rem 0;
+}
+.team{
+    display: grid;
+    text-align: center;
+    background-image: url('../src/files/alfa-home-parallax-3.jpg');
+    background-attachment: scroll;
+    background-position: top;
+    height: 520px;
+    padding: 2rem;
+}
+.team-txt{
+    justify-self: center;
+    width: 790px;
+    padding: 1.5rem 0;
+}
+.team-txt h3, .team-txt h2, .team-txt p{
+    color: #fff;
+    padding: 3px 0;
+}
+.team-card{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 0 2rem;
+}
+.team-profile:hover  .qoute{
+    opacity: 100;
+}
+.profile-pics{
+    width: 340px;
+    height: 352px;
+    position: relative;
+    display: grid;
+}
+.qoute{
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    position: absolute;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    width: 300px;
+    height: 330px;
+    padding: 2rem;
+    transition: linear 1s;
+}
+/* .qoute:hover{
+    opacity: 100;
+} */
+.profile-pics p{
+    color: #fff;
+    text-align: left;
+    justify-self: center;
+    align-self: center;
+}
+.profile-pics img{
+    width: 100%;
+    height: 100%;
+}
+.profile-txt h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+.profile-txt{
+    padding: 5px;
+}
+.fifth{
+    margin: 3rem 0;
+    background-color: #f7f7f7;
+    padding: 4rem 0;
+}
+.movies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 7rem;
+}
+.movies h3{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: .2158rem;
+    margin: 0.4rem 0 1rem 0;
+}
+.movies span{
+    margin: 2rem;
 }
 .footer-fst{
     display: flex;
