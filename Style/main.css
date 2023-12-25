@@ -40,6 +40,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.065);
 }
 .logo{
     padding-left: 10px;
@@ -50,12 +51,19 @@ header{
 }
 nav{
     width: 50%;
+    display: grid;
+}
+nav ul{
+    justify-self: center;
 }
 nav ul li{
     display: inline-block;
     padding: 0 1.3rem;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 23px;
     text-transform: uppercase;
-    font-weight: 400;
+    letter-spacing: .2em;
     color: #fff;
 }
 .icn{
@@ -226,7 +234,7 @@ nav ul li{
     font-weight: 700;
     font-size: 24px;
     text-align: center;
-    margin: 10rem 0 2rem 0;
+    margin: 1rem 0 2rem 0;
 }
 .third{
     display: grid;
@@ -271,6 +279,33 @@ nav ul li{
 .theatre-production{
     background-image: url("../src/files/alfa-home-parallax-2.jpg");
     padding: 3rem;
+}
+.stirring{
+    display: flex;
+    padding: 2rem 3rem;
+    align-items: center;
+}
+.stirring-img{
+    width: 50%;
+    padding:  0 0 0 4rem;
+}
+.stirring-movie{
+    width: 50%;
+    padding:  3rem 4rem 0 2.5rem;
+}
+.stirring-movie h3{
+    color: #848484;
+    font-size: 12px;
+    line-height: 1.5em;
+    letter-spacing: .13em;
+    font-weight: 700;
+    padding: 15px 0;
+}
+.stirring-movie p{
+    padding: 15px 0;
+}
+.movie-awards{
+    margin:  15px;
 }
 .fourth{
     margin: 2rem 0 12rem 0;
@@ -341,7 +376,7 @@ nav ul li{
     padding: 5px;
 }
 .fifth{
-    margin: 3rem 0;
+    margin: 3rem 0 0 0;
     background-color: #f7f7f7;
     padding: 4rem 0;
 }
@@ -361,21 +396,44 @@ nav ul li{
 .movies span{
     margin: 2rem;
 }
+.sixth{
+    background-color: #262626;
+    padding: 2rem 0;
+}
+.collab-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.singls-logo img{
+    aspect-ratio: 3/2;
+    width: 80%;
+    object-fit: contain;
+}
 .footer-fst{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     padding: 4rem;
     background-color: #1c1c1c;
 }
 .footer-fst div{
-    width: 305px;
+    width: 300px;
+    padding: 13px 23px 0 0;
 } 
 .footer-fst div h3{
     color: #fff;
-    font-size: 16px;
+    font-size: 13px;
+    letter-spacing: 3px;
     font-weight: 600;
+}
+.footer-fst div p{
+    color: #848484;
+    font-size: 16px;
+    font-weight: 400;
+    height: 6.5rem;
+    padding: 15px 8px 0 0;
 }
 .footer-menu ul{
     padding-top: 1rem;
@@ -384,6 +442,43 @@ nav ul li{
     color: #848484;
     padding: 6px 0;
 }
-.about p{
-    color: #1c1c1c;
+.form{
+    width: auto;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-right: 2.8rem;
+    background-color: transparent;
+    border: #fff 1px solid;
+    cursor: pointer;
+    transition: ease-out .5s;
+}
+.form:hover{
+    border: #fff 2px solid;
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: inherit;
+    outline: 0;
+    cursor: pointer;
+}
+input:focus{
+    outline: nome !important;
+}
+.form i{
+    color: #fff;
+    padding-right: 5px;
+}
+.lst{
+    background-color: #000;
+    padding: 1.5rem;  
+}
+.lst p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: inherit;
 }
