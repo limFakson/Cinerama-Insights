@@ -37,26 +37,33 @@ header{
 }
 .menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 2rem;
     background-color: rgba(0, 0, 0, 0.065);
 }
+.openmenu i, .closemenu  i{
+    font-size: 24px;
+    line-height: 5px;
+}
 .logo{
     padding-left: 10px;
     width: 20%;
+    z-index: 1;
 }
 .logo img{
     width: 160px;
 }
 nav{
-    width: 50%;
+    width: 70%;
     display: grid;
 }
 nav ul{
-    justify-self: center;
+    justify-content: space-between;
+    transition: linear 1s;
 }
 nav ul li{
+    cursor: pointer;
     display: inline-block;
     padding: 0 1.3rem;
     font-size: 12px;
@@ -121,15 +128,13 @@ nav ul li{
     background-color: rgb(16, 17, 19);
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    padding: 3rem;
+    align-items: flex-start;
+    padding: 5rem;
     height: 21rem;
     gap: 2rem;
-    padding-bottom: 5rem;
 }
 .fstdiv span{
     width: 53%;
-    padding-top: 2.6rem;
 }
 .fstdiv span p{
     letter-spacing: .8erm;
