@@ -1,0 +1,96 @@
+@media (max-width: 480px){
+    .menu{
+        background-color: #fff;
+        padding: 1.3rem 2rem;
+    }
+    .logo {
+        width: 40%;
+    }
+    header{
+        height: 640px;
+    }
+    .classic{
+        margin: 10rem 0 !important;
+        padding: 2rem;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 29px;
+        line-height: 1.310344827586207em;
+        letter-spacing: .13em;
+    }
+    p{
+        font-size: 17px;
+        line-height: 28px;
+        font-weight: 300;
+        letter-spacing: -.01em;
+        color: #4c4c4c;
+    }
+    .txt-img h3{
+        font-weight: 700;
+        line-height: 18px;
+        font-size: 13px;
+        letter-spacing: 10px;
+        padding: 0 4rem;
+    }
+    .classic span img{
+        padding: 0 1rem;
+        width: auto;
+    }
+    .awards{
+        gap: 1rem;
+        margin: 1rem;
+    }
+    .pg-rate{
+        width: auto;
+        margin-top: 2rem;   
+    }
+    .fstdiv{
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 3rem;
+    }
+    .fstdiv span{
+        width: auto;
+    }
+    .shorts{
+        height: auto;
+        padding: 0;
+    }
+    .item-img1{
+        left: -31%;
+    }
+    .item-img3{
+        left: 131%;
+    }
+    .item-img2{
+        height: 190px;
+        width: 480px;
+    }
+    .testimonial{
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+    }
+    .tstl-slide{
+        width: 100%;
+        text-align: center;
+    }
+    .movies{
+        margin: 2rem 6rem;
+    }
+    .movie-card{
+        width: 100%;
+    }
+    .collab-logo{
+        gap: 0 1rem;
+        padding: 0 2rem;
+    }
+    .singls-logo img{
+        width: 100%;
+    }
+    .footer-fst{
+        text-align: center;
+    }
+}

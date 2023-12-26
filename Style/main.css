@@ -261,13 +261,15 @@ nav ul li{
 }
 .makes-card{
     display: flex;
+    flex-wrap: wrap;
     justify-self: center;
     justify-content: center;
     align-items: center;
-    gap: .16rem;
-    margin: 2rem 3rem 10rem 3rem;
+    gap: 1.3rem;
+    margin: 2rem 1rem 10rem 1rem;
 }
 .products-card{
+    width: 18%;
     text-align: center;
     display: grid;
 }
@@ -319,15 +321,16 @@ nav ul li{
     display: grid;
     text-align: center;
     background-image: url('../src/files/alfa-home-parallax-3.jpg');
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: top;
     height: 520px;
     padding: 2rem;
+    width: auto;
 }
 .team-txt{
     justify-self: center;
-    width: 790px;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
+    width: 90%;
 }
 .team-txt h3, .team-txt h2, .team-txt p{
     color: #fff;
@@ -338,6 +341,7 @@ nav ul li{
     justify-content: center;
     align-self: center;
     gap: 0 2rem;
+    justify-self: center;
 }
 .team-profile:hover  .qoute{
     opacity: 100;
@@ -345,7 +349,6 @@ nav ul li{
 .profile-pics{
     width: 340px;
     height: 352px;
-    position: relative;
     display: grid;
 }
 .qoute{
@@ -387,8 +390,9 @@ nav ul li{
 }
 .movies{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 2rem;
     margin: 0 7rem;
 }
@@ -401,6 +405,9 @@ nav ul li{
 .movies span{
     margin: 2rem;
 }
+.movie-card{
+    width: 30%;
+}
 .sixth{
     background-color: #262626;
     padding: 2rem 0;
@@ -409,11 +416,12 @@ nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 3rem;
 }
 .singls-logo img{
     aspect-ratio: 3/2;
     width: 80%;
-    object-fit: contain;
+    object-fit: cover;
 }
 .footer-fst{
     display: flex;
