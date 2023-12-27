@@ -37,6 +37,9 @@
         padding: 0 1rem;
         width: auto;
     }
+    .gallery{
+        overflow-x: hidden;
+    }
     .awards{
         gap: 1rem;
         margin: 1rem;
@@ -76,6 +79,32 @@
     .tstl-slide{
         width: 100%;
         text-align: center;
+        margin: 0 2rem;
+    }
+    .new-fiims{
+        padding: 0 4rem;
+    }
+    .gallery-card img{
+        width: 320px;
+    }
+    .product{
+        padding: 0 3rem;
+    }
+    .makes-card{
+        margin: 2rem 3rem;
+    }
+    .products-card{
+        width: 100%;
+    }
+    .products-icn{
+        width: 90px;
+        height: 98px;
+    }
+    .profile-container{
+        height: auto;
+    }
+    .profile-pics{
+        height: 190px;
     }
     .movies{
         margin: 2rem 6rem;
@@ -92,5 +121,8 @@
     }
     .footer-fst{
         text-align: center;
+    }
+    .form{
+        margin-right: 0;
     }
 }

@@ -156,6 +156,7 @@ nav ul li{
 .gallery{
     width: 100%;
     position: relative;
+    display: grid;
 }
 .image-gallery{
     align-items: center;
@@ -184,13 +185,30 @@ nav ul li{
     left: 93%;
     transform: translateX(-50%);
 }
+.play-button{
+    justify-self: center;
+}
+.play-btn i{
+    color: #fff;
+    font-size: 33px;
+    font-weight: 900;
+}
 .testimonial{
     display: flex;
     justify-content: center;
     padding-bottom: 2rem;
+    position: relative;
 }
 .tstl-slide{
     width: 50%;
+}
+.bg-fade{
+    background-color: transparent;
+}
+.bg-fade i{
+    color: rgba(0, 0, 0, 0.304);
+    font-size: 30px;
+    font-weight: 600;
 }
 .carousel{
     width: 100%;
@@ -342,6 +360,9 @@ nav ul li{
     align-self: center;
     gap: 0 2rem;
     justify-self: center;
+}
+.team-profile{
+    cursor: default;
 }
 .team-profile:hover  .qoute{
     opacity: 100;
