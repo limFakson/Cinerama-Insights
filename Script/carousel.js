@@ -1,3 +1,18 @@
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    swiper.slideNext();
+});
+
+
 // Changing the logo pics when resolution hits 1014 width
 function checkResolution(){
     const logo = document.querySelector('.logo img');
@@ -47,3 +62,7 @@ const immageGallery = document.querySelector(".image-gallery");
 const galleryitems = document.querySelectorAll(".gallery-item");
 const controlprevious = document.querySelector(".previous");
 const controlnext = document.querySelector(".next");
+
+
+
+  console.log('Swiper')

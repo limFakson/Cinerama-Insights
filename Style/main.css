@@ -56,11 +56,10 @@ header{
 }
 nav{
     width: 70%;
-    display: grid;
 }
 nav ul{
-    justify-content: space-between;
     transition: linear 1s;
+    justify-content: space-around;
 }
 nav ul li{
     cursor: pointer;
@@ -166,24 +165,17 @@ nav ul li{
 .gallery-item{
     height: 330px;
     z-index: 0;
-    position: absolute;
-    width: 500px;
+    width: 500px !important;
     background-size: contain;
 }
-.item-img1{
-    left: 7%;
-  transform: translateX(-50%);
+.gallery-item img{
+    width: 100%;
+    height: 100%;
 }
 .item-img2{
     height: 380px;
     z-index: 1;
-    transform: translateX(-50%);
-    left: 50%;
-    width: 680px;
-}
-.item-img3{
-    left: 93%;
-    transform: translateX(-50%);
+    width: 680px !important;
 }
 .play-button{
     justify-self: center;
