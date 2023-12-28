@@ -56,6 +56,7 @@ header{
 }
 nav{
     width: 70%;
+    justify-self: end;
 }
 nav ul{
     transition: linear 1s;
@@ -165,8 +166,6 @@ nav ul li{
 .gallery-item{
     height: 330px;
     z-index: 0;
-    width: 500px !important;
-    background-size: contain;
 }
 .gallery-item img{
     width: 100%;
@@ -175,7 +174,7 @@ nav ul li{
 .item-img2{
     height: 380px;
     z-index: 1;
-    width: 680px !important;
+    width: 700px;
 }
 .play-button{
     justify-self: center;

@@ -1,18 +1,4 @@
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper', {
-        direction: 'horizontal',
-        loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-    swiper.slideNext();
-});
-
-
 // Changing the logo pics when resolution hits 1014 width
 function checkResolution(){
     const logo = document.querySelector('.logo img');

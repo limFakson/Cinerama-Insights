@@ -11,8 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link href="/Style/output.css" rel="stylesheet">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./Style/main.css">
     <link rel="stylesheet" href="./Style/tablet.css">
     <link rel="stylesheet" href="./Style/mobile.css">
@@ -98,14 +96,20 @@
         </div>
         <div class="shorts clicket">
             <div class="swiper gallery">
-                <div class="swiper-wrapper image-gallery">
-                    <div class="swiper-slide gallery-item item-img1">
+                <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] image-gallery" >
+                    <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none gallery-item item-img1" data-te-carousel-active
+                    data-te-carousel-item
+                    style="backface-visibility: hidden">
                         <img class="" src="./src/files/alfa-home-c-img-1.jpg" loading="lazy" alt="">
                     </div>
-                    <div class="swiper-slide gallery-item item-img2">
+                    <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none gallery-item item-img2" data-te-carousel-active
+                    data-te-carousel-item
+                    style="backface-visibility: hidden">
                         <img class="" src="./src/files/alfa-home-c-img-2.jpg" loading="lazy" alt="">
                     </div>
-                    <div class="swiper-slide gallery-item item-img3">
+                    <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none gallery-item item-img3" data-te-carousel-active
+                    data-te-carousel-item
+                    style="backface-visibility: hidden">
                         <img class="" src="./src/files/alfa-home-c-img-3.jpg" loading="lazy" alt="">
                     </div>
                 </div>
@@ -447,7 +451,7 @@
     </footer>
 
     <!--External Javascript link-->
-    <script src="./Script/carousel.js"></script>
+    <script src="./Script/carousel.js" type="module"></script>
     <script src="./Script/mail_system/sendmail.js"></script>
 </body>
 </html>
