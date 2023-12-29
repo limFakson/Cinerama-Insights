@@ -14,73 +14,29 @@
     <link rel="stylesheet" href="./Style/main.css">
     <link rel="stylesheet" href="./Style/tablet.css">
     <link rel="stylesheet" href="./Style/mobile.css">
-    <link rel="stylesheet" href="./Style/flexibility.css">
+    <script>
+        fetch('./src/header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.insertAdjacentHTML('afterbegin', html);
+
+                headerContentLoaded();
+            });
+    </script>
+
+    <script>
+        fetch('./src/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.insertAdjacentHTML('beforeend', html);
+             
+                footerContentLoaded();
+            });
+    </script>
 </head>
 <body>
     <!--NavBar-->
-    <header loading="lazy">
-        <div class="menu">
-            <div class="logo">
-                <img src="./src/files/Logo-light.png" alt="">
-            </div>
-            <nav>
-                <span class= "openmenu">
-                    <i class="fa-solid fa-bars"></i>
-                </span>
-                <ul class="flex">
-                    <div class="menulist">
-                        <span class="closemenu">
-                            <i class="fa-solid fa-xmark"></i>
-                        </span>
-                        <li>HOME</li>
-                        <li>Pages</li>
-                        <li>Portfolio</li>
-                        <li>Blog</li>
-                    </div>
-
-                    <div class="nav-icon">
-                        <span class="icn-1 icn">
-                           <a href="">
-                            <i class="fa-brands fa-instagram"></i>
-                           </a>
-                        </span>
-                        <span class="icn-2 icn">
-                            <a href="">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                        </span>
-                        <span class="icn-3 icn">
-                            <a href="">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </span>
-                        <span class="icn-4 icn">
-                            <a href="">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                        </span>
-                    </div>
-                </ul>
-            </nav>
-            
-        </div>
-
-        <div class="classic">
-            <span class="txt-img">
-                <h3>Film by alejandro duris</h3>
-                <img src="./src/files/alfa-home-slider-img-8.png" alt="">
-            </span>
-
-            <div class="awards">
-                <img src="./src/files/alfa-home-slider-img-3.png" alt="">
-                <img src="./src/files/alfa-home-slider-img-4.png" alt="">
-                <img src="./src/files/alfa-home-slider-img-5.png" alt="">
-            </div>
-            <span class="pg-rate">
-                <img src="./src/files/alfa-home-slider-img-7.png" alt="">
-            </span>
-        </div>
-    </header>
+    <!--Imported header displays here-->
 
     <!--Main-->
     <section class="fst">
@@ -96,21 +52,15 @@
         </div>
         <div class="shorts clicket">
             <div class="swiper gallery">
-                <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] image-gallery" >
-                    <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none gallery-item item-img1" data-te-carousel-active
-                    data-te-carousel-item
-                    style="backface-visibility: hidden">
-                        <img class="" src="./src/files/alfa-home-c-img-1.jpg" loading="lazy" alt="">
+                <div class="swipper-wrapper image-gallery" >
+                    <div class="swiper-slide gallery-item item-img1">
+                        <img class="" src="./files/alfa-home-c-img-1.jpg" loading="lazy" alt="">
                     </div>
-                    <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none gallery-item item-img2" data-te-carousel-active
-                    data-te-carousel-item
-                    style="backface-visibility: hidden">
-                        <img class="" src="./src/files/alfa-home-c-img-2.jpg" loading="lazy" alt="">
+                    <div class="swiper-slide gallery-item item-img2">
+                        <img class="" src="./files/alfa-home-c-img-2.jpg" loading="lazy" alt="">
                     </div>
-                    <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none gallery-item item-img3" data-te-carousel-active
-                    data-te-carousel-item
-                    style="backface-visibility: hidden">
-                        <img class="" src="./src/files/alfa-home-c-img-3.jpg" loading="lazy" alt="">
+                    <div class="swiper-slide gallery-item item-img3">
+                        <img class="" src="./files/alfa-home-c-img-3.jpg" loading="lazy" alt="">
                     </div>
                 </div>
                 <div id="button" class="swiper-button-prev previous absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
@@ -168,7 +118,7 @@
             <div class="img-gallery">
                 <div class="gallery-card">
                     <div class="image">
-                        <img src="./src/files/main-port-21.jpg" alt="">
+                        <img src="./files/main-port-21.jpg" alt="">
                     </div>
                     <span class="fig-caption">
                         <h3>Island</h3>
@@ -176,7 +126,7 @@
                 </div>
                 <div class="gallery-card">
                     <div class="image">
-                        <img src="./src/files/main-port-11.jpg" alt="">
+                        <img src="./files/main-port-11.jpg" alt="">
                     </div>
                     <span class="fig-caption">
                         <h3>Cafe bar</h3>
@@ -184,7 +134,7 @@
                 </div>
                 <div class="gallery-card">
                     <div class="image">
-                        <img src="./src/files/main-port-21.jpg" alt="">
+                        <img src="./files/main-port-21.jpg" alt="">
                     </div>
                     <span class="fig-caption">
                         <h3>Girls</h3>
@@ -192,7 +142,7 @@
                 </div>
                 <div class="gallery-card">
                     <div class="image">
-                        <img src="./src/files/main-port-11.jpg" alt="">
+                        <img src="./files/main-port-11.jpg" alt="">
                     </div>
                     <span class="fig-caption">
                         <h3>Retro</h3>
@@ -200,7 +150,7 @@
                 </div>
                 <div class="gallery-card">
                     <div class="image">
-                        <img src="./src/files/main-port-21.jpg" alt="">
+                        <img src="./files/main-port-21.jpg" alt="">
                     </div>
                     <span class="fig-caption">
                         <h3>Happiness</h3>
@@ -208,7 +158,7 @@
                 </div>
                 <div class="gallery-card">
                     <div class="image">
-                        <img src="./src/files/main-port-11.jpg" alt="">
+                        <img src="./files/main-port-11.jpg" alt="">
                     </div>
                     <span class="fig-caption">
                         <h3>Action</h3>
@@ -226,7 +176,7 @@
         <div class="makes-card">
             <div class="products-card">
                 <span class="products-icn">
-                    <img src="./src/files/main-image-4.png" alt="">
+                    <img src="./files/main-image-4.png" alt="">
                 </span>
                 <span class="txt">
                     <h3>Director</h3>
@@ -236,7 +186,7 @@
             </div>
             <div class="products-card">
                 <span class="products-icn">
-                    <img src="./src/files/main-image-7.png" alt="">
+                    <img src="./files/main-image-7.png" alt="">
                 </span>
                 <span class="txt">
                     <h3>TV Shows</h3>
@@ -246,7 +196,7 @@
             </div>
             <div class="products-card">
                 <span class="products-icn">
-                    <img src="./src/files/main-image-8.png" alt="">
+                    <img src="./files/main-image-8.png" alt="">
                 </span>
                 <span class="txt">
                     <h3>Film Festival</h3>
@@ -256,7 +206,7 @@
             </div>
             <div class="products-card">
                 <span class="products-icn">
-                    <img src="./src/files/main-image-9.png" alt="">
+                    <img src="./files/main-image-9.png" alt="">
                 </span>
                 <span class="txt">
                     <h3>Film Awwards</h3>
@@ -272,14 +222,14 @@
                 </div>
             </div>
             <div class="theatre-pics">
-                <img src="./src/files/alfa-home-c-img-5.jpg" alt="">
+                <img src="./files/alfa-home-c-img-5.jpg" alt="">
             </div>
         </div>
     </section>
 
     <section class="stirring">
         <div class="stirring-img">
-            <img src="./src/files/alfa-home-timline-img-5.jpg" alt="">
+            <img src="./files/alfa-home-timline-img-5.jpg" alt="">
         </div>
         <div class="stirring-movie">
             <h3>drama</h3>
@@ -288,7 +238,7 @@
                 Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
                 Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
             <span class="movie-awards">
-                <img src="./src/files/About-prize-img.png" alt="">
+                <img src="./files/About-prize-img.png" alt="">
             </span>
         </div>
     </section>
@@ -309,7 +259,7 @@
                                 <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus elit. Phasellus rhoncus nulla ut metus.</p>
                             </span>
                             <span class="profile-icn">
-                                <img src="./src/files/main-image-5.jpg" alt="">
+                                <img src="./files/main-image-5.jpg" alt="">
                             </span>
                         </div>
                     </div>
@@ -325,7 +275,7 @@
                                 <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus elit. Phasellus rhoncus nulla ut metus.</p>
                             </span>
                             <span class="profile-icn">
-                                <img src="./src/files/main-image-5.jpg" alt="">
+                                <img src="./files/main-image-5.jpg" alt="">
                             </span>
                         </div>
                     </div>
@@ -341,7 +291,7 @@
                                 <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus elit. Phasellus rhoncus nulla ut metus.</p>
                             </span>
                             <span class="profile-icn">
-                                <img src="./src/files/main-image-5.jpg" alt="">
+                                <img src="./files/main-image-5.jpg" alt="">
                             </span>
                         </div>
                     </div>
@@ -361,7 +311,7 @@
         </span>
         <div class="movies">
             <div class="movie-card">
-                <img src="./src/files/Blog-standard-img-1.jpg" alt="">
+                <img src="./files/Blog-standard-img-1.jpg" alt="">
                 <span class="movies-txt">
                     <p>April 20, 2018 by <b>Amy Burton</b> Review</p>
                 <h3>On The Set</h3>
@@ -370,7 +320,7 @@
                 </span>
             </div>
             <div class="movie-card">
-                <img src="./src/files/Blog-standard-img-15.jpg" alt="">
+                <img src="./files/Blog-standard-img-15.jpg" alt="">
                 <span class="movies-txt">
                     <p>April 20, 2018 by <b>Amy Burton</b> Review</p>
                     <h3>Summer Dream</h3>
@@ -379,7 +329,7 @@
                 </span>
             </div>
             <div class="movie-card">
-                <img src="./src/files/Blog-standard-img-16.jpg" alt="">
+                <img src="./files/Blog-standard-img-16.jpg" alt="">
                 <span class="movies-txt">
                     <p>April 20, 2018 by <b>Amy Burton</b> Review</p>
                     <h3>Plan B</h3>
@@ -393,65 +343,29 @@
     <section class="sixth">
         <div class="collab-logo">
             <span class="singls-logo">
-                <img src="./src/files/Client-light-img-1.png" alt="">
+                <img src="./files/Client-light-img-1.png" alt="">
             </span>
             <span class="singls-logo">
-                <img src="./src/files/Client-light-img-2.png" alt="">
+                <img src="./files/Client-light-img-2.png" alt="">
             </span>
             <span class="singls-logo">
-                <img src="./src/files/Client-light-img-3.png" alt="">
+                <img src="./files/Client-light-img-3.png" alt="">
             </span>
             <span class="singls-logo">
-                <img src="./src/files/Client-light-img-4.png" alt="">
+                <img src="./files/Client-light-img-4.png" alt="">
             </span>
             <span class="singls-logo">
-                <img src="./src/files/Client-light-img-5.png" alt="">
+                <img src="./files/Client-light-img-5.png" alt="">
             </span>
             <span class="singls-logo">
-                <img src="./src/files/Client-light-img-6.png" alt="">
+                <img src="./files/Client-light-img-6.png" alt="">
             </span>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-fst">
-            <div class="footer-menu">
-                <h3>DFRIGLES PRODUCTION</h3>
-                <ul>
-                    <li>About Dfrigles</li>
-                    <li>Studio Tour</li>
-                    <li>Press & Subcription</li>
-                    <li>Help(FAQS)</li>
-                </ul>
-            </div>
-            <div class="about">
-                <h3>About</h3>
-                <p>Lorem ipsum dolor sit amet. Turel upn gravida nibh vel velit auctor aliquet aen sollic conseut ipsutis.</p>
-                <span class="footer-icn"></span>
-            </div>
-            <div class="news-updates">
-                <h3>News & Films Updates</h3>
-                <p>Lorem Ipsner gravida nibh velml auctsi aliquet. Aene sollic conseut.</p>
-                <form action="">
-                    <span class="form">
-                        <input type="email" value="" placeholder="Your email" required>
-                        <button type="submit">
-                            <i class="fa-solid fa-paper-plane" ></i>
-                        </button>
-                    </span>
-                </form>
-            </div>
-            <div >
-                <h3>Follow Us on instagram</h3>
-            </div>
-        </div>
-        <div class="lst">
-            <p>© 2023 D_Frigles, All Right Reserved</p>
-        </div>
-    </footer>
-
+    <!--Import footer displays here-->
     <!--External Javascript link-->
-    <script src="./Script/carousel.js"></script>
-    <script src="./Script/mail_system/sendmail.js"></script>
+     <script src="./Script/mail_system/sendmail.js" defer></script>
+    <script src="./Script/carousel.js" defer></script>
 </body>
 </html>

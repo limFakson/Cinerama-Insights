@@ -2,6 +2,12 @@
     .openmenu, .closemenu{
         display: none;
     }
+    nav ul li:hover{
+        color: #4c4c4c;
+    }
+    i:hover{
+        color: #4c4c4c;
+    }
 }
 
 @media (max-width: 1014px){

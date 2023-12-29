@@ -1,0 +1,29 @@
+header{
+    background-image: url('../files/What-we-do-title-area-img.jpeg');
+    height: auto;
+}
+.classic{
+    height: auto;
+    position: initial;
+    margin: 0 !important;
+    padding: 5rem 0;
+}
+.classic .txt-img, .awards, .pg-rate{
+    display: none;
+}
+.title-area_text{
+    justify-self: center;
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+.title-area_text h2{
+    font-size: 33px;
+    font-weight: 700;   
+}
+.title-area_text h3{
+    font-size: 12px;
+    line-height: 1.5em;
+    letter-spacing: .13em;
+    margin: 0 0 17px;
+}

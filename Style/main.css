@@ -30,7 +30,7 @@ body {
     overflow-x: hidden;
 }
 header{
-    background-image: url('../src/files/alfa-home-slider-img-1.jpg');
+    background-image: url('../files/alfa-home-slider-img-1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -50,6 +50,7 @@ header{
     padding-left: 10px;
     width: 20%;
     z-index: 2;
+    cursor: pointer;
 }
 .logo img{
     width: 160px;
@@ -72,6 +73,7 @@ nav ul li{
     text-transform: uppercase;
     letter-spacing: .2em;
     color: #fff;
+    transition: ease-out .2s;
 }
 .icn{
     padding: 0 10px;
@@ -79,6 +81,7 @@ nav ul li{
 .nav-icon i{
     color: #fff;
     font-size: 18px;
+    transition: ease-out .2s;
 }
 .classic{
     display: grid;
@@ -88,7 +91,7 @@ nav ul li{
 .classic .txt-img{
     display: grid;
     justify-self: center;
-    background-image: url("../src/files/moving-text.png");
+    background-image: url("../files/moving-text.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -113,6 +116,9 @@ nav ul li{
     gap: 3rem;
     padding-top: 5rem;
     margin: 2rem;
+}
+.title-area_text{
+    display: none;
 }
 .pg-rate{
     justify-self: center;
@@ -172,9 +178,7 @@ nav ul li{
     height: 100%;
 }
 .item-img2{
-    height: 380px;
     z-index: 1;
-    width: 700px;
 }
 .play-button{
     justify-self: center;
@@ -208,7 +212,7 @@ nav ul li{
     margin: 2rem 0;
     padding: 4rem 0;
     display: grid;
-    background-image: url("../src/files/alfa-home-background-img.jpg");
+    background-image: url("../files/alfa-home-background-img.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -293,7 +297,7 @@ nav ul li{
     height: 100%;
 }
 .theatre-production{
-    background-image: url("../src/files/alfa-home-parallax-2.jpg");
+    background-image: url("../files/alfa-home-parallax-2.jpg");
     padding: 3rem;
 }
 .stirring{
@@ -329,7 +333,7 @@ nav ul li{
 .team{
     display: grid;
     text-align: center;
-    background-image: url('../src/files/alfa-home-parallax-3.jpg');
+    background-image: url('../files/alfa-home-parallax-3.jpg');
     background-attachment: fixed;
     background-position: top;
     height: 520px;
