@@ -112,11 +112,11 @@
     .movie-card{
         width: 100%;
     }
-    .collab-logo{
+    .collab-logo-item{
         gap: 0 1rem;
         padding: 0 2rem;
     }
-    .singls-logo img{
+    .collab-logo img{
         width: 100%;
     }
     .footer-fst{

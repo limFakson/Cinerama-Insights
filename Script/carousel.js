@@ -41,15 +41,69 @@ function headerContentLoaded() {
     window.addEventListener('resize', checkResolution);
 
     checkResolution()
-
-
-    const gallery = document.querySelector(".gallery");
-    const immageGallery = document.querySelector(".image-gallery");
-    const galleryitems = document.querySelectorAll(".gallery-item");
-    const controlprevious = document.querySelector(".previous");
-    const controlnext = document.querySelector(".next");
-
-
-
-    console.log('Swiper not  swiping')
 };
+const gallery = document.querySelector(".gallery");
+const immageGallery = document.querySelector(".image-gallery");
+const galleryitems = document.querySelectorAll(".gallery-item");
+const controlprevious = document.querySelector(".previous");
+const controlnext = document.querySelector(".next");
+
+
+
+console.log('Swiper not  swiping')
+
+document.addEventListener("DOMContentLoaded", function () {
+    const clogo = document.querySelector(".collab-logo-item");
+    const logos = document.querySelectorAll(".collab-logo");
+    let currentIndex = 0;
+    let startX;
+  
+    function showLogo(index) {
+        const logoWidth = logos[0].offsetWidth;
+        const newPosition = -index * logoWidth;
+        clogo.style.transition = "transform 0.5s ease-in-out";
+
+        // Adjust the position to create an infinite loop
+        if (index === 0) {
+            // Move to the last logo for a smooth transition
+            clogo.style.transform = `translateX(${-logos.length * logoWidth}px)`;
+        } else {
+            clogo.style.transform = `translateX(${newPosition}px)`;
+        }
+    }
+
+    function nextLogo() {
+        currentIndex = (currentIndex + 1) % logos.length;
+        showLogo(currentIndex);
+    }
+
+    function prevLogo() {
+        currentIndex = (currentIndex - 1 + logos.length) % logos.length;
+        showLogo(currentIndex);
+    }
+
+    function startSwipe(e) {
+        startX = e.clientX || e.touches[0].clientX;
+        clogo.style.transition = "none"; // Disable transition during swipe
+    }
+
+    function endSwipe(e) {
+        if (startX === undefined) return;
+        const endX = e.clientX || e.changedTouches[0].clientX;
+        const diffX = startX - endX;
+
+        if (diffX > 50) {
+            nextLogo();
+        } else if (diffX < -50) {
+            prevLogo();
+        }
+
+        startX = undefined;
+    }
+
+    clogo.addEventListener("mousedown", startSwipe);
+    clogo.addEventListener("touchstart", startSwipe);
+
+    clogo.addEventListener("mouseup", endSwipe);
+    clogo.addEventListener("touchend", endSwipe);
+});
