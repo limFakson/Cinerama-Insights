@@ -59,51 +59,41 @@ document.addEventListener("DOMContentLoaded", function () {
     let startX;
   
     function showLogo(index) {
-        const logoWidth = logos[0].offsetWidth;
-        const newPosition = -index * logoWidth;
-        clogo.style.transition = "transform 0.5s ease-in-out";
-
-        // Adjust the position to create an infinite loop
-        if (index === 0) {
-            // Move to the last logo for a smooth transition
-            clogo.style.transform = `translateX(${-logos.length * logoWidth}px)`;
-        } else {
-            clogo.style.transform = `translateX(${newPosition}px)`;
-        }
+      const logoWidth = logos[0].offsetWidth;
+      clogo.style.transform = `translateX(${-index * logoWidth}px)`;
     }
-
+  
     function nextLogo() {
-        currentIndex = (currentIndex + 1) % logos.length;
-        showLogo(currentIndex);
+      currentIndex = (currentIndex + 1) % logos.length;
+      showLogo(currentIndex);
     }
-
+  
     function prevLogo() {
-        currentIndex = (currentIndex - 1 + logos.length) % logos.length;
-        showLogo(currentIndex);
+      currentIndex = (currentIndex - 1 + logos.length) % logos.length;
+      showLogo(currentIndex);
     }
-
+  
     function startSwipe(e) {
-        startX = e.clientX || e.touches[0].clientX;
-        clogo.style.transition = "none"; // Disable transition during swipe
+      startX = e.clientX || e.touches[0].clientX;
     }
-
+  
     function endSwipe(e) {
-        if (startX === undefined) return;
-        const endX = e.clientX || e.changedTouches[0].clientX;
-        const diffX = startX - endX;
-
-        if (diffX > 50) {
-            nextLogo();
-        } else if (diffX < -50) {
-            prevLogo();
-        }
-
-        startX = undefined;
+      if (startX === undefined) return;
+      const endX = e.clientX || e.changedTouches[0].clientX;
+      const diffX = startX - endX;
+  
+      if (diffX > 30) {
+        nextLogo();
+      } else if (diffX < -30) {
+        prevLogo();
+      }
+  
+      startX = undefined;
     }
-
+  
     clogo.addEventListener("mousedown", startSwipe);
     clogo.addEventListener("touchstart", startSwipe);
-
+  
     clogo.addEventListener("mouseup", endSwipe);
     clogo.addEventListener("touchend", endSwipe);
 });
