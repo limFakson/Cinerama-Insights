@@ -278,11 +278,11 @@ nav ul li{
     justify-self: center;
     justify-content: center;
     align-items: center;
-    gap: 1.3rem;
-    margin: 2rem 1rem 10rem 1rem;
+    gap: 2rem;
+    margin: 3rem 1rem 10rem 1rem;
 }
 .products-card{
-    width: 18%;
+    width: 20%;
     text-align: center;
     display: grid;
 }
@@ -515,4 +515,11 @@ input:focus{
     text-align: center;
     font-size: 16px;
     font-weight: inherit;
+}
+.testimonial-coll{
+    display: flex;
+    overflow-x: hidden;
+}
+.testimonial-slide{
+    width: 100%;
 }
