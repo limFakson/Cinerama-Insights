@@ -196,4 +196,7 @@
         width: 270px;
         padding: 13px 23px 1rem 0;
     } 
+    .collab-logo{
+        min-width: 35%;
+    }
 }

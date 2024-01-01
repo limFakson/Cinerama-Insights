@@ -79,3 +79,15 @@ header{
     font-weight: 700;
     text-transform: uppercase;
 }
+
+@media (min-width: 510px) and (max-width: 820px){
+    .title-area_text{
+        padding: 5rem 0;
+    }
+}
+@media (min-width: 830px){
+    .title-area_text{
+        padding: 10rem 0;
+        align-self: center;
+    }
+}

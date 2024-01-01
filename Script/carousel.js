@@ -52,6 +52,7 @@ const controlnext = document.querySelector(".next");
 
 console.log('Swiper not  swiping')
 
+//partners logo slide carousel
 document.addEventListener("DOMContentLoaded", function () {
     const clogo = document.querySelector(".collab-logo-item");
     const logos = document.querySelectorAll(".collab-logo");
@@ -96,4 +97,52 @@ document.addEventListener("DOMContentLoaded", function () {
   
     clogo.addEventListener("mouseup", endSwipe);
     clogo.addEventListener("touchend", endSwipe);
+});
+
+//Testmonial slide
+document.addEventListener("DOMContentLoaded", function () {
+  const slideContainer = document.querySelector(".testimonial-slide");
+  const slides = document.querySelectorAll(".slide-content");
+  const totalSlides = slides.length;
+  let currentSlide = 0;
+  let startX;
+
+  function showSlide(index) {
+    const slideWidth = slides[0].offsetWidth;
+    slideContainer.style.transform = `translateX(${-index * slideWidth}px)`;
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % 3;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+  }
+
+  function startTouch(e) {
+    startX = e.touches[0].clientX;
+  }
+
+  function moveTouch(e) {
+    if (startX === undefined) return;
+    const currentX = e.touches[0].clientX;
+    const diffX = startX - currentX;
+
+    if (Math.abs(diffX) > 50) {
+      if (diffX > 0) {
+        nextSlide();
+      } else {
+        prevSlide();
+      }
+      startX = undefined;
+    }
+  }
+
+  // Automatic swipe every 3 seconds
+  setInterval(function () {
+    nextSlide();
+  }, 5000);
 });

@@ -188,26 +188,6 @@ nav ul li{
     font-size: 33px;
     font-weight: 900;
 }
-.testimonial{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2rem;
-    position: relative;
-}
-.tstl-slide{
-    width: 50%;
-}
-.bg-fade{
-    background-color: transparent;
-}
-.bg-fade i{
-    color: rgba(0, 0, 0, 0.304);
-    font-size: 30px;
-    font-weight: 600;
-}
-.carousel{
-    width: 100%;
-}
 .second{
     margin: 2rem 0;
     padding: 4rem 0;
@@ -435,9 +415,6 @@ nav ul li{
     align-items: center;
     padding: 0 3rem;
 }
-.collab-logo{
-    min-width: 35%;
-}
 .collab-logo img{
     aspect-ratio: 3/2;
     width: 80%;
@@ -517,9 +494,29 @@ input:focus{
     font-weight: inherit;
 }
 .testimonial-coll{
-    display: flex;
-    overflow-x: hidden;
+    position: relative;
 }
 .testimonial-slide{
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
     width: 100%;
+    position: relative;
+    padding: 2rem 10px;
+}
+.slide-content{
+    display: grid;
+    min-width: 100%;
+    transition: linear .2s;
+}
+.slide-content span{
+    justify-self: center;
+    text-align: center;
+    padding: 10px 6rem;
+}
+.testmonial-text p{
+    font-size: 27px;
+    line-height: 40px;
+    font-style: italic;
+    color: #000;
 }
